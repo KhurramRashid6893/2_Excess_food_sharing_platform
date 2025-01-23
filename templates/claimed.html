@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+{% block content %}
+<section class="claimed">
+    <h1>Claimed Food</h1>
+    {% if claimed %}
+        <table>
+            <thead>
+                <tr>
+                    <th>Food Name</th>
+                    <th>Quantity</th>
+                    <th>Location</th>
+                    <th>Donor Name</th>
+                    <th>Claimer Name</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for claim in claimed %}
+                    <tr>
+                        <td>{{ claim[1] }}</td>
+                        <td>{{ claim[2] }}</td>
+                        <td>{{ claim[3] }}</td>
+                        <td>{{ claim[4] }}</td>
+                        <td>{{ claim[5] }}</td>
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    {% else %}
+        <p>No food has been claimed yet.</p>
+    {% endif %}
+</section>
+{% endblock %}

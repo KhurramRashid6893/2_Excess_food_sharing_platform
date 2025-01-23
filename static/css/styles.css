@@ -1,0 +1,392 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #333;
+    background: linear-gradient(120deg, #a8dadc, #f1faee);
+}
+
+header {
+    background: #264653;
+    padding: 1em 0;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 1.5em;
+}
+
+nav a {
+    text-decoration: none;
+    color: #f1faee;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #2a9d8f;
+}
+
+footer {
+    text-align: center;
+    background: #1d3557;
+    color: #f1faee;
+    padding: 0.1em;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Section Styles */
+.hero, .donate, .claim {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: calc(100vh - 120px);
+    text-align: center;
+    color: #1d3557;
+}
+
+.hero {
+    background: url('../images/placeholder.jpg') center/cover no-repeat;
+    color: #1d3557;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.4);
+}
+
+.hero h1 {
+    font-size: 3em;
+    margin: 0.5em 0;
+}
+
+.hero p {
+    font-size: 1.5em;
+}
+
+.btn {
+    background: #2a9d8f;
+    color: #f1faee;
+    text-decoration: none;
+    padding: 0.8em 1.5em;
+    border-radius: 5px;
+    margin: 1em;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn:hover {
+    background: #264653;
+    color: #f1faee;
+}
+table {
+    width: 80%;
+    margin: 1em auto;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 0.8em;
+}
+
+th {
+    background-color: #f7f7f7;
+    font-weight: bold;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+/* Donate Section */
+.donate {
+    padding: 0.1em;
+    text-align: center;
+}
+
+form {
+    display: inline-block;
+    text-align: left;
+    width: 50%;
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 1.5em;
+}
+
+.form-group {
+    margin-bottom: 1em;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 0.5em;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 0.8em;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+button {
+    background: #0277bd;
+    color: #fff;
+    border: none;
+    padding: 0.8em 1.5em;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+button:hover {
+    background: #01579b;
+}
+
+/* Table Styles */
+table {
+    width: 80%;
+    margin: 1em auto;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 0.8em;
+}
+
+th {
+    background-color: #f7f7f7;
+    font-weight: bold;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+/* Success Message */
+.success {
+    color: green;
+    font-weight: bold;
+    margin-bottom: 1em;
+}
+
+/* Claim Food Section Styles */
+.claim {
+    padding: 2em;
+    margin: 0 auto;
+    width: 90%; /* Consistent width */
+    background: #f1faee;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    color: #264653;
+}
+
+.claim h1 {
+    font-size: 2.5em;
+    margin-bottom: 1em;
+    color: #1d3557;
+    font-weight: bold;
+}
+
+.claim p {
+    font-size: 1.2em;
+    color: #2a9d8f;
+    margin-bottom: 2em;
+}
+
+/* Table Styles */
+.claim table {
+    width: 100%;
+    margin: 1em auto;
+    border-collapse: collapse;
+    text-align: center;
+    background: #ffffff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.claim th, .claim td {
+    padding: 1em;
+    border: 1px solid #ddd;
+    font-size: 1em;
+    color: #1d3557;
+}
+
+.claim th {
+    background-color: #a8dadc;
+    font-weight: bold;
+    color: #1d3557;
+    text-transform: uppercase;
+}
+
+.claim td {
+    background-color: #f8f9fa;
+}
+
+.claim tr:nth-child(even) td {
+    background-color: #e9ecef;
+}
+
+.claim tr:hover td {
+    background-color: #2a9d8f;
+    color: #ffffff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Button Styles for Claim */
+.btn-claim {
+    background: #38b000;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    padding: 0.5em 1.2em;
+    font-size: 1em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-claim:hover {
+    background: #264653;
+    transform: translateY(-3px);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .claim {
+        width: 95%;
+    }
+
+    .claim h1 {
+        font-size: 2em;
+    }
+
+    .claim table {
+        font-size: 0.9em;
+    }
+
+    .claim th, .claim td {
+        padding: 0.8em;
+    }
+
+    .btn-claim {
+        font-size: 0.9em;
+    }
+}
+/* Login and Signup Section Styles */
+.auth {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: calc(100vh - 120px); /* Full-page minus header/footer */
+    padding: 2em;
+    background: linear-gradient(120deg, #f1faee, #a8dadc);
+    color: #1d3557;
+}
+
+.auth h1 {
+    font-size: 2.5em;
+    margin-bottom: 1em;
+    color: #264653;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.auth form {
+    background: #ffffff;
+    padding: 2em;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 400px;
+    text-align: center;
+}
+
+.auth input[type="text"],
+.auth input[type="password"] {
+    width: 100%;
+    padding: 0.8em;
+    margin: 1em 0;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1em;
+    color: #333;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.auth input[type="text"]:focus,
+.auth input[type="password"]:focus {
+    border-color: #2a9d8f;
+    outline: none;
+    box-shadow: 0 0 5px rgba(42, 157, 143, 0.5);
+}
+
+.auth button {
+    background: #2a9d8f;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    padding: 0.8em 1.5em;
+    font-size: 1em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.auth button:hover {
+    background: #264653;
+    transform: translateY(-3px);
+}
+
+/* Flash Message Styles */
+.auth p.success {
+    color: #38b000;
+    background: #e9f7ef;
+    padding: 0.8em;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1em;
+    font-weight: bold;
+}
+
+.auth p.error {
+    color: #e63946;
+    background: #fce8e8;
+    padding: 0.8em;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1em;
+    font-weight: bold;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .auth h1 {
+        font-size: 2em;
+    }
+
+    .auth form {
+        padding: 1.5em;
+    }
+
+    .auth input[type="text"],
+    .auth input[type="password"] {
+        font-size: 0.9em;
+    }
+
+    .auth button {
+        font-size: 0.9em;
+    }
+}

@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% block content %}
+<section class="donate">
+    <h1>Donate Food</h1>
+    {% if message %}
+        <p class="success">{{ message }}</p>
+    {% endif %}
+    <form method="POST">
+        <div class="form-group">
+            <label for="food_name">Food Name:</label>
+            <input type="text" id="food_name" name="food_name" placeholder="E.g., Rice, Bread" required>
+        </div>
+        <div class="form-group">
+            <label for="quantity">Quantity:</label>
+            <input type="text" id="quantity" name="quantity" placeholder="E.g., 2 kg, 5 packets" required>
+        </div>
+        <div class="form-group">
+            <label for="location">Location:</label>
+            <input type="text" id="location" name="location" placeholder="E.g., Mumbai, Delhi" required>
+        </div>
+        <button type="submit" class="btn">Donate</button>
+    </form>
+</section>
+{% endblock %}

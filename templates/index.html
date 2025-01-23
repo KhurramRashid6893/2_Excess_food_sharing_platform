@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+{% block content %}
+<section class="hero">
+    <h1>Welcome to Excess Food Sharing Platform</h1>
+    <p>Let's reduce food waste together by sharing excess food.</p>
+    <a href="{{ url_for('donate') }}" class="btn">Donate Food</a>
+    <a href="{{ url_for('claim') }}" class="btn">Claim Food</a>
+</section>
+{% endblock %}
